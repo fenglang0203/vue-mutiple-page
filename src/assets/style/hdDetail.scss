@@ -1,0 +1,62 @@
+.content-wapper{
+  width: 1200px;
+  margin: auto;
+}
+.head-wrapper{
+  padding: 53px 25px 25px 25px;
+  border-bottom: 3px solid #04be83;
+  .title{
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 30px;
+    min-height: 32px;
+    color: #333;
+  }
+  .head-bott{
+    font-size: 16px;
+    line-height: 16px;
+    color: #333;
+
+    .writer, .time{
+      margin-right: 56px;
+    }
+  }
+}
+.desc{
+  padding: 40px 0 24px 26px;
+  font-size: 16px;
+  color: #333;
+  i{
+    display: inline-block;
+  }
+  .start-icon{
+    background-image: url('../pic/hdDetail/start-time.png');
+    width: 16px;
+    height: 19px;
+    vertical-align: middle;
+  }
+  .start-time,.stop-time{
+    margin-right: 17px;
+  }
+  .stop-icon{
+    background-image: url('../pic/hdDetail/stop-time.png');
+    width: 16px;
+    height: 19px;
+    vertical-align: middle;
+  }
+  .loc-icon{
+    background-image: url('../pic/hdDetail/location.png');
+    width: 12px;
+    height: 17px;
+    vertical-align: middle;
+  }
+}
+
+.contentDetail{
+  padding: 0 26px 100px 26px;
+}
+
+
+.content-main{
+  padding: 48px 25px 107px 25px;
+}

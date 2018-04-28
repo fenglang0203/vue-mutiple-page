@@ -1,0 +1,188 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+.bread-wrapper{
+  width: 100%;
+  background: #e5e5e5;
+}
+.breadcrumb{
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 42px;
+  width: 1158px;
+  li{
+    line-height: 42px;
+    display: inline-block;
+  }
+}
+.breadcrumb>li+li:before {
+  padding: 0 5px;
+  color: #333333;
+  content: ">";
+}
+
+.star-tool{
+  img{
+    cursor: pointer;
+  }
+}
+.content-wapper{
+  position: relative;
+  margin: 0 auto;
+  width: 1158px;
+  padding-bottom: 100px;
+  padding-top:52px;
+  overflow: hidden;
+  .content-t {
+    overflow: hidden;
+    padding-bottom: 26px;
+    .picBox {
+      float: left;
+      width: 90px;
+      height: 90px;
+      overflow: hidden;
+      margin-right: 18px;
+      border-radius: 50%;
+      .pic {
+        display: block;
+        width: 90px;
+        height: 90px;
+        background: url("../pic/personal/01.png") no-repeat center;
+        background-size: 100%;
+      }
+    }
+    .content-t-r {
+      float: left;
+      h4 {
+        height: 16px;
+        line-height: 16px;
+        margin: 16px 0;
+
+      }
+      .txt {
+        overflow: hidden;
+        .star-wrapper {
+          float: left;
+          width: 130px;
+        }
+        .tip {
+          float: left;
+          margin-left: 13px;
+          font-size: 15px;
+          color: #666;
+          margin-top: 1px;
+        }
+      }
+    }
+  }
+  .content-b {
+    width: 792px;
+    border: 1px solid #e5e5e5;
+    .userInput {
+      width: 100%;
+      height: 250px;
+      outline: medium;
+      box-sizing: border-box;
+      padding: 9px 16px;
+      resize: none;
+      border: 0;
+      border-bottom: 1px solid #e5e5e5;
+      background: #f4f3f3;
+    }
+    .uploadPic-wrapper {
+      background: #f4f3f3;
+      .uploadPic-title {
+        height: 50px;
+        box-sizing: border-box;
+        padding-top: 8px;
+        .addPic {
+          width: 120px;
+          height: 34px;
+          float: left;
+          border: 0;
+          background: #04be83;
+          text-align: center;
+          font-size: 16px;
+          line-height: 100%;
+          color: #fff;
+          margin-left: 16px;
+          margin-right: 20px;
+          position: relative;
+          cursor: pointer;
+          span {
+            position: absolute;
+            left: 21px;
+            top: 0;
+            font-size: 16px;
+            line-height: 32px;
+            color: #fff;
+          }
+          #picUpload {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            width: 120px;
+            height: 35px;
+            cursor: pointer;
+          }
+        }
+        > span {
+          color: #666;
+          float: left;
+          margin-top: 4px;
+        }
+      }
+      .uploadPic-content{
+        overflow: hidden;
+        padding: 0 11px;
+        .picThumbBox{
+          display: block;
+          float: left;
+          height: 100px;
+          width: 153px;
+          margin: 5px;
+          position: relative;
+          .picThumb{
+            width: 100%;
+            height:100%;
+          }
+          .deleteBtn{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: -5px;
+            right: -8px;
+            background: url("../pic/index/error.png");
+            background-size: 100% 100%;
+            cursor: pointer;
+
+          }
+        }
+      }
+    }
+  }
+  #submitComment{
+    width: 160px;
+    height: 34px;
+    border: 0;
+    background: #04be83;
+    text-align: center;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    position: absolute;
+    right: 364px;
+    bottom: 40px;
+  }
+  .warnning{
+    display: none;
+    color: #ff0505;
+    position: absolute;
+    left: 10px;
+    bottom: 65px;
+  }
+}

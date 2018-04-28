@@ -1,0 +1,52 @@
+.content{
+  font-size: 0;
+  width: 940px;
+  padding-left: 49px;
+  padding-bottom: 54px;
+  padding-top: 25px;
+  .bread{
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 80px;
+  }
+  .input-items{
+    margin-left: 102px;
+    margin-bottom: 20px;
+    height: 24px;
+    .inputTitle{
+      width: 90px;
+      font-size: 15px;
+      line-height: 24px;
+      display: inline-block;
+    }
+    .errorTip{
+      //width: 90px;
+      font-size: 15px;
+      line-height: 24px;
+      display: inline-block;
+      padding-left: 10px;
+      color: red;
+    }
+    input{
+      width: 220px;
+      height: 24px;
+      border: solid 1px rgba(220, 220, 220, 1);
+      font-size: 15px;
+      padding-left: 6px;
+      box-sizing: border-box;
+    }
+  }
+  .confirm{
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background-color: #04be83;
+    font-size: 22px;
+    color: #ffffff;
+    margin-top: 200px;
+    margin-left: 257px;
+    padding: 0;
+    border: 0;
+
+  }
+}

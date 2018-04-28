@@ -1,0 +1,271 @@
+.content-wrapper{
+  padding-bottom: 84px;
+  width: 1200px;
+  margin: auto;
+  .content-l{
+    width: 867px;
+    border: solid 1px rgba(229, 229, 229, 1);
+    float: left;
+    .head{
+      height: 48px;
+      background-color: rgba(244, 243, 240, 1);
+      border: solid 1px rgba(220, 217, 203, 1);
+      padding: 16px 29px;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 0;
+      span{
+        font-size: 14px;
+        line-height: 14px;
+        color: #333;
+      }
+      .type{
+        font-weight: bolder;
+        margin-left: 13px;
+      }
+      .default{
+        margin-left: 508px;
+      }
+      .rate,.hot{
+        margin-left: 25px;
+      }
+      .default,.rate,.hot{
+        cursor: pointer;
+        i{
+
+        }
+        &.active{
+          color: #04be83;
+        }
+      }
+    }
+    .itemList{
+      padding-top: 15px;
+      .items{
+        &:hover{
+          .right .title{
+            color: #04be83;
+            font-weight: bolder;
+          }
+        }
+        &:last-child{
+          border-bottom: 0;
+        }
+        height: 187px;
+        margin: 0 10px;
+        padding: 20px 18px;
+        border-bottom: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        .left{
+          padding: 2px;
+          width: 226px;
+          height: 146px;
+          border: solid 2px rgba(223, 220, 220, 1);
+          box-sizing: border-box;
+          float: left;
+          overflow: hidden;
+          div{
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            .bookBtn{
+              position: absolute;
+              left: 0;
+              top: 8px;
+              width: 42px;
+              height: 20px;
+              font-size: 14px;
+              line-height: 20px;
+              border-radius: 0 10px 10px 0;
+              background: #ffcc00;
+              text-indent: 13px;
+            }
+            img{
+              height: 100%;
+            }
+          }
+        }
+        .right{
+          width: 566px;
+          float: right;
+          .title{
+            font-weight: bolder;
+            font-size: 18px;
+            line-height: 18px;
+            letter-spacing: 1.3px;
+            color: #424141;
+            margin-bottom: 20px;
+            margin-top: 22px;
+            transition: .3s;
+          }
+          .mid{
+            font-size: 0;
+            div{
+              display: inline-block;
+            }
+            .star-wrapper{
+              width: 93px;
+              height: 16px;
+            }
+            .score,.rate,.average{
+              font-size: 16px;
+              line-height: 16px;
+              vertical-align: top;
+              color: #959595;
+            }
+            .score{
+              color: #45c797;
+              margin-left: 6px;
+            }
+            .rate{
+              cursor: pointer;
+              margin-left: 25px;
+              padding-right: 15px;
+              //border-right: 1px solid #e5e5e5;
+            }
+            .average{
+              margin-left: 15px;
+            }
+          }
+          .bott{
+            margin-top: 30px;
+            font-size: 0;
+            span{
+              font-size: 16px;
+              line-height: 16px;
+              color: #333;
+
+            }
+            .type{
+              font-weight: bolder;
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .content-r{
+    width: 289px;
+    border: solid 1px rgba(229, 229, 229, 1);
+    float: right;
+    .head{
+      font-size: 20px;
+      height: 45px;
+      line-height: 45px;
+      border-bottom: solid 1px rgba(229, 229, 229, 1);
+      padding-left: 11px;
+      color: #333;
+
+    }
+    //翘边阴影
+    .items{
+      position:relative;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+    }
+    .items:before,.items:after{
+      content: "";
+      position: absolute;
+      top: 245px;
+      bottom: 8px;
+      background: transparent;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+    .items:before{
+      left: 22px;
+      right: 12px;
+      transform: skew(-6deg) rotate(-4deg);
+    }
+    .items:after{
+      left: 12px;
+      right: 22px;
+      transform: skew(6deg) rotate(4deg);
+    }
+    .itemList{
+      padding: 43px 21px;
+      .items{
+        &:hover{
+          .bott .title{
+            color: #04be83;
+          }
+        }
+        margin-bottom: 35px;
+        height: 260px;
+        border: solid 1px rgba(229, 229, 229, 1);
+        &:last-child{
+          margin-bottom: 0;
+        }
+        .headimg{
+          height: 166px;
+          overflow: hidden;
+          position: relative;
+          .bookBtn{
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 42px;
+            height: 20px;
+            font-size: 14px;
+            line-height: 20px;
+            border-radius: 0 10px 10px 0;
+            background: #ffcc00;
+            text-indent: 13px;
+          }
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .bott{
+          background-color: #fff;
+          height: 94px;
+          padding: 19px 17px;
+          box-sizing: border-box;
+          .title{
+            font-size: 16px;
+            line-height: 16px;
+            margin-bottom: 12px;
+            color: #333;
+
+          }
+          .bott-bott{
+            position: relative;
+            div{
+              display: inline-block;
+              color: #959595;
+            }
+            .star-wrapper{
+              width: 87px;
+              height: 17px;
+            }
+            .score{
+              margin-right: 14px;
+              margin-left: 14px;
+              color: #45c797;
+            }
+            .rate{
+              position: absolute;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.checkbox{
+  cursor: pointer;
+  height: 11px;
+  width: 11px;
+  border: 1px solid #333333;
+  display: inline-block;
+  vertical-align: top;
+  &.on{
+    background-image: url('../pic/demon/right.png');
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+  }
+}

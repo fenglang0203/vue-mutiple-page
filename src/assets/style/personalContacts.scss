@@ -1,0 +1,539 @@
+@charset "utf-8";
+/* CSS Document */
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select, td {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 12px "microsoft yahei";
+  word-wrap: break-word;
+}
+
+a, u, s, del {
+  color: #000;
+  text-decoration: none
+}
+
+fieldset, a img, .bor0 {
+  border: 0;
+}
+
+i, em, b {
+  font-style: normal;
+  font-weight: 400;
+}
+
+li {
+  list-style: none
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/*细线边框*/
+
+.ind2 {
+  text-indent: 2em
+}
+
+/*溢出隐藏出现省略号*/
+.over {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*让图片垂直对齐方式*/
+/*给valign添加个子元素对齐图片. 当父元素没有设置宽度时,这个行内块元素会有6px的宽度, 如果父元素设置了宽度 这个块元素没有宽度*/
+.valign:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.valign img {
+  vertical-align: middle;
+}
+
+/*万能清除浮动法*/
+.clear {
+  zoom: 1;
+}
+
+.clear:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*a标签清除蓝色*/
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input{
+  outline: medium;
+}
+
+body {
+  padding: 32px 0 0 45px;
+}
+
+#contactsList-wrapper {
+  padding-bottom: 80px;
+  .contactsList-top {
+    height: 38px;
+    overflow: hidden;
+    p {
+      float: left;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 18px;
+      letter-spacing: 0px;
+      color: #424141;
+    }
+    .addContact {
+      outline: medium;
+      cursor: pointer;
+      float: right;
+      width: 116px;
+      height: 26px;
+      border-radius: 2px;
+      border: solid 1px #04be83;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: #04be83;
+      background: #fff;
+    }
+  }
+  .contactNone{
+    display: none;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 47px;
+    letter-spacing: 1px;
+    color: #424141;
+    text-align: center;
+    padding-top: 91px;
+  }
+  .contactsList-b {
+    border: solid 1px #04be83;
+    display: none;
+    .title {
+      height: 69px;
+      background-color: #f4f3f0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      p {
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #333333;
+      }
+    }
+    .contactsList {
+      padding: 0 24px;
+
+      .item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 60px;
+        border-bottom: 1px solid #e5e5e5;
+        p{
+          font-size: 13px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 58px;
+          letter-spacing: 0px;
+          color: #424141;
+        }
+        .name {
+          width: 90px;
+          text-align: center;
+          margin-right: 84px;
+          margin-left: 12px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .idType {
+          width: 83px;
+          text-align: center;
+          margin-right: 58px;
+
+        }
+        .idNum{
+          width: 195px;
+          text-align: center;
+          margin-right: 46px;
+        }
+        .phone{
+          width: 98px;
+          text-align: center;
+          margin-right: 77px;
+        }
+        .operate{
+          width: 83px;
+          text-align: center;
+          cursor: pointer;
+          .modifyBtn{
+            margin-right: 10px;
+            margin-left: 16px;
+          }
+        }
+      }
+    }
+
+  }
+}
+.block{
+  display: block!important;
+}
+.none{
+  display: none!important;
+}
+#addContact-wrapper{
+  display: none;
+  height:436px;
+  position: relative;
+  .name-wrapper{
+    height:24px;
+    margin-bottom: 16px;
+    .nameTitle{
+      display: inline-block;
+      width:83px;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: #424141;
+      b{
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #ff1818;
+      }
+    }
+    .nameInput{
+      display: inline-block;
+      width: 200px;
+      height: 24px;
+      border: solid 1px #dcdcdc;
+      text-indent: 10px;
+      font-size: 15px;
+
+    }
+    .errorTip{
+      margin-left: 10px;
+      color: red;
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+  }
+  .phone-wrapper{
+    height:24px;
+    margin-bottom: 16px;
+
+    .phoneTitle{
+      display: inline-block;
+      width:83px;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: #424141;
+      b{
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #ff1818;
+      }
+    }
+    .phoneInput{
+      display: inline-block;
+      width: 200px;
+      height: 24px;
+      border: solid 1px #dcdcdc;
+      text-indent: 10px;
+      font-size: 15px;
+
+    }
+    .errorTip{
+      margin-left: 10px;
+      color: red;
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+  .idType-wrapper{
+    height:24px;
+    margin-bottom: 16px;
+
+    .idTypeTitle{
+      text-indent: 6px;
+      display: inline-block;
+      width:83px;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: #424141;
+      b{
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #ff1818;
+      }
+    }
+    .idTypeInput{
+      display: inline-block;
+      width: 20px;
+      height: 15px;
+      vertical-align: text-top;
+    }
+    s{
+      display: inline-block;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: #424141;
+    }
+
+  }
+  .id-wrapper{
+    height:24px;
+    margin-bottom: 16px;
+    display: none;
+
+    .idTitle{
+      display: inline-block;
+      width:83px;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: #424141;
+      text-indent: 6px;
+      b{
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #ff1818;
+      }
+    }
+    .idInput{
+      display: inline-block;
+      width: 200px;
+      height: 24px;
+      border: solid 1px #dcdcdc;
+      text-indent: 10px;
+      font-size: 15px;
+
+    }
+    .errorTip{
+      margin-left: 10px;
+      color: red;
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+  .saveAddBtn {
+    cursor: pointer;
+    position: absolute;
+    right: 307px;
+    bottom: 0;
+    width: 200px;
+    height: 50px;
+    background-color: #04be83;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 47px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    border: 0;
+  }
+}
+
+#modifyContact-wrapper{
+  display: none;
+  height:436px;
+  position: relative;
+  .errorTip{
+    margin-left: 10px;
+    color: red;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .name-wrapper{
+    height:24px;
+    margin-bottom: 16px;
+    .nameTitle{
+      display: inline-block;
+      width:83px;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: #424141;
+      b{
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #ff1818;
+      }
+    }
+    .nameInput{
+      display: inline-block;
+      width: 200px;
+      height: 24px;
+      border: solid 1px #dcdcdc;
+      text-indent: 10px;
+    }
+
+  }
+  .phone-wrapper{
+    height:24px;
+    margin-bottom: 16px;
+
+    .phoneTitle{
+      display: inline-block;
+      width:83px;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: #424141;
+      b{
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #ff1818;
+      }
+    }
+    .phoneInput{
+      display: inline-block;
+      width: 200px;
+      height: 24px;
+      border: solid 1px #dcdcdc;
+      text-indent: 10px;
+    }
+
+  }
+  .idType-wrapper{
+    height:24px;
+    margin-bottom: 16px;
+
+    .idTypeTitle{
+      text-indent: 6px;
+      display: inline-block;
+      width:83px;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: #424141;
+      b{
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #ff1818;
+      }
+    }
+    .idTypeInput{
+      display: inline-block;
+      width: 20px;
+      height: 15px;
+      vertical-align: text-top;
+    }
+    s{
+      display: inline-block;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: #424141;
+    }
+
+  }
+  .id-wrapper{
+    height:24px;
+    margin-bottom: 16px;
+
+    .idTitle{
+      display: inline-block;
+      width:83px;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: #424141;
+      text-indent: 6px;
+      b{
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #ff1818;
+      }
+    }
+    .idInput{
+      display: inline-block;
+      width: 200px;
+      height: 24px;
+      border: solid 1px #dcdcdc;
+      text-indent: 10px;
+    }
+
+  }
+  .saveAddBtn {
+    cursor: pointer;
+    position: absolute;
+    right: 307px;
+    bottom: 0;
+    width: 200px;
+    height: 50px;
+    background-color: #04be83;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 47px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    border: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,355 @@
+@charset "utf-8";
+
+#page-wrapper{
+  #wrapper{
+    position: relative;
+    .BGimg{
+      position: absolute;
+      height: 103vh;
+      top: -21vh;
+      left: -10vh;
+      width: 102%;
+      z-index: -2;
+    }
+  }
+}
+
+.banner{
+  .content{
+    h3.major1 {
+      font-family: "宋体";
+      font-size: 30px;
+      margin-bottom: 1px;
+    }
+    h2.major{
+      font-family: "宋体";
+      font-size: 70px;
+    }
+    .actions li a.circle {
+      background: url("../../pic/silkRoad/03.png") no-repeat center, #fff;
+
+    }
+
+  }
+}
+
+.spotlight#first{
+  .content.span-7{
+    width:105%;
+    padding-top: 0;
+    p {
+      font-size: 16px;
+      line-height: 35px;
+      text-align: justify;
+    }
+  }
+}
+
+.panel{
+  .intro.color2{
+    &:nth-child(1){
+      background: linear-gradient( 145deg, rgb(112,149,190) 0%, rgb(174,218,243) 100%);
+    }
+    &:nth-child(3){
+      background: linear-gradient( 145deg, rgb(190,154,112) 0%, rgb(243,211,174) 100%);
+    }
+    &:nth-child(5){
+      background: linear-gradient( 145deg, rgb(93,166,139) 0%, rgb(174,243,213) 100%);
+    }
+    &:nth-child(7){
+      background: linear-gradient( 145deg, rgb(190,112,112) 0%, rgb(243,174,174) 100%);
+    }
+    &:nth-child(9) {
+      background: linear-gradient(145deg, rgb(231, 204, 109) 0%, rgb(195, 165, 62) 100%);
+      a.circle{
+        background: url("../../pic/silkRoad/03.png") no-repeat center, #fff;
+
+      }
+    }
+
+    h3 {
+      font-size: 26px;
+      line-height: 26px;
+      font-family: 宋体;
+    }
+    h2.major{
+      font-size: 36px;
+      line-height: 36px;
+      font-family: 宋体;
+    }
+  }
+  .gallery{
+    .group.span-3-1{
+      .image{
+        .title {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height:43px;
+          font-size: 16px;
+          line-height: 43px;
+          text-align: center;
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+
+        }
+      }
+    }
+    .group.span-4-5{
+      .image{
+        .title {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 43px;
+          font-size: 16px;
+          line-height: 43px;
+          background: url("../../pic/silkRoad/13.png") no-repeat 16px center,linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+          text-indent:38px;
+        }
+      }
+    }
+    .group.span-3-2{
+      .image{
+        .title {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 43px;
+          font-size: 16px;
+          line-height: 43px;
+          background: url("../../pic/silkRoad/13.png") no-repeat 16px center,linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+          text-indent:38px;
+
+        }
+      }
+    }
+    .group.span-3-3{
+      .image{
+        .title {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 43px;
+          font-size: 16px;
+          line-height: 43px;
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+          text-indent:16px;
+        }
+      }
+    }
+    .group.span-3-4{
+      .mediaBox{
+        display: flex;
+      }
+      .span-4-5 {
+        padding-top: 57px;
+        padding-left: 71px;
+        position: relative;
+        background: linear-gradient(0deg, rgb(231, 204, 109) 0%, rgb(195, 165, 62) 100%);
+      }
+      .span-1-5{
+        .vrOtherLeft{
+          top:-100%;
+        }
+
+        .vrOtherRight{
+          top:100%;
+        }
+        .vrOtherLeft,.vrOtherRight{
+          width:100%;
+          height:100%;
+          background: #000;
+          position: absolute;
+          left:0;
+          z-index: 2;
+          overflow: hidden;
+          transition: .4s;
+          >img{
+            width:100%;
+          }
+          .tip{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 43px;
+            font-size: 16px;
+            line-height: 43px;
+            background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+            text-align: center;
+          }
+
+        }
+        .videoOtherLeft{
+          top:-100%;
+        }
+        .videoOtherRight{
+          top:100%;
+        }
+        .videoOtherLeft,.videoOtherRight{
+          width:100%;
+          height:100%;
+          background: #000;
+          position: absolute;
+          left:0;
+          top:-100%;
+          z-index: 2;
+          overflow: hidden;
+          transition: .4s;
+          >img{
+            width:100%;
+          }
+          .tip{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 43px;
+            font-size: 16px;
+            line-height: 43px;
+            background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+            text-align: center;
+          }
+
+        }
+        .picOtherLeft{
+          top:-100%;
+        }
+        .picOtherRight{
+          top:100%;
+        }
+        .picOtherLeft,.picOtherRight{
+          width:100%;
+          height:100%;
+          background: #000;
+          position: absolute;
+          left:0;
+          top:-100%;
+          z-index: 2;
+          overflow: hidden;
+          transition: .4s;
+          >img{
+            width:100%;
+          }
+          .tip{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 43px;
+            font-size: 16px;
+            line-height: 43px;
+            background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+            text-align: center;
+          }
+
+        }
+        >img{
+          height:100%;
+        }
+        .icoWrapper {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width:82px;
+          height: 52px;
+          .ico{
+            margin:0 auto;
+            height:100%;
+          }
+          .viewMore{
+            width: 82px;
+            height: 30px;
+            border: 1px solid #fff;
+            text-align: center;
+            font-size: 14px;
+            line-height: 29px;
+            color: #fff;
+            border-radius: 5px;
+            margin-top: 17px;
+            display: none;
+          }
+        }
+      }
+      .image{
+        h2.major{
+          font-family: "宋体";
+          font-size: 70px;
+        }
+        a.circle {
+          background: url("../../pic/silkRoad/29.png") no-repeat center, #fff;
+          position: absolute;
+          right: 107px;
+          top: 148px;
+        }
+        .title {
+        }
+      }
+    }
+  }
+}
+
+.spotlight.large{
+  width:1020px;
+  background: #028090;
+
+  .itemsWrap {
+    width: 1007px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 40px;
+    li{
+      list-style: none;
+    }
+    a{
+      border:0;
+    }
+    .item {
+      float: left;
+      margin-top: 213px;
+      &:nth-child(1) {
+        width: 139px;
+      }
+      &:nth-child(2) {
+        width: 241px;
+      }
+      &:nth-child(3) {
+        width: 368px;
+      }
+      &:nth-child(4) {
+        float: right;
+        width: 140px;
+        .QRcode {
+          display: block;
+          width: 100%;
+        }
+      }
+      h5 {
+        font-size: 24px;
+        line-height: 24px;
+        color: #fff;
+        font-weight: 400;
+      }
+      ul {
+        padding-left: 0;
+
+        li {
+          height: 16px;
+          margin-bottom: 16px;
+          padding-left: 0;
+          a {
+            color: #fff;
+
+          }
+        }
+      }
+    }
+  }
+}

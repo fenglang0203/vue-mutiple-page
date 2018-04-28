@@ -1,0 +1,249 @@
+@charset "UTF-8";
+#page-wrapper #wrapper {
+  position: relative; }
+  #page-wrapper #wrapper .BGimg {
+    position: absolute;
+    height: 103vh;
+    top: -21vh;
+    left: -10vh;
+    width: 102%;
+    z-index: -2; }
+
+.banner .content h3.major1 {
+  font-family: "宋体";
+  font-size: 30px;
+  margin-bottom: 1px; }
+.banner .content h2.major {
+  font-family: "宋体";
+  font-size: 70px; }
+.banner .content .actions li a.circle {
+  background: url("../../pic/silkRoad/03.png") no-repeat center, #fff; }
+
+.spotlight#first .content.span-7 {
+  width: 105%;
+  padding-top: 0; }
+  .spotlight#first .content.span-7 p {
+    font-size: 16px;
+    line-height: 35px;
+    text-align: justify; }
+
+.panel .intro.color2:nth-child(1) {
+  background: linear-gradient(145deg, #7095be 0%, #aedaf3 100%); }
+.panel .intro.color2:nth-child(3) {
+  background: linear-gradient(145deg, #be9a70 0%, #f3d3ae 100%); }
+.panel .intro.color2:nth-child(5) {
+  background: linear-gradient(145deg, #5da68b 0%, #aef3d5 100%); }
+.panel .intro.color2:nth-child(7) {
+  background: linear-gradient(145deg, #be7070 0%, #f3aeae 100%); }
+.panel .intro.color2:nth-child(9) {
+  background: linear-gradient(145deg, #e7cc6d 0%, #c3a53e 100%); }
+  .panel .intro.color2:nth-child(9) a.circle {
+    background: url("../../pic/silkRoad/03.png") no-repeat center, #fff; }
+.panel .intro.color2 h3 {
+  font-size: 26px;
+  line-height: 26px;
+  font-family: 宋体; }
+.panel .intro.color2 h2.major {
+  font-size: 36px;
+  line-height: 36px;
+  font-family: 宋体; }
+.panel .gallery .group.span-3-1 .image .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 43px;
+  font-size: 16px;
+  line-height: 43px;
+  text-align: center;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%); }
+.panel .gallery .group.span-4-5 .image .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 43px;
+  font-size: 16px;
+  line-height: 43px;
+  background: url("../../pic/silkRoad/13.png") no-repeat 16px center, linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  text-indent: 38px; }
+.panel .gallery .group.span-3-2 .image .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 43px;
+  font-size: 16px;
+  line-height: 43px;
+  background: url("../../pic/silkRoad/13.png") no-repeat 16px center, linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  text-indent: 38px; }
+.panel .gallery .group.span-3-3 .image .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 43px;
+  font-size: 16px;
+  line-height: 43px;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  text-indent: 16px; }
+.panel .gallery .group.span-3-4 .mediaBox {
+  display: flex; }
+.panel .gallery .group.span-3-4 .span-4-5 {
+  padding-top: 57px;
+  padding-left: 71px;
+  position: relative;
+  background: linear-gradient(0deg, #e7cc6d 0%, #c3a53e 100%); }
+.panel .gallery .group.span-3-4 .span-1-5 .vrOtherLeft {
+  top: -100%; }
+.panel .gallery .group.span-3-4 .span-1-5 .vrOtherRight {
+  top: 100%; }
+.panel .gallery .group.span-3-4 .span-1-5 .vrOtherLeft, .panel .gallery .group.span-3-4 .span-1-5 .vrOtherRight {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  overflow: hidden;
+  transition: .4s; }
+  .panel .gallery .group.span-3-4 .span-1-5 .vrOtherLeft > img, .panel .gallery .group.span-3-4 .span-1-5 .vrOtherRight > img {
+    width: 100%; }
+  .panel .gallery .group.span-3-4 .span-1-5 .vrOtherLeft .tip, .panel .gallery .group.span-3-4 .span-1-5 .vrOtherRight .tip {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 43px;
+    font-size: 16px;
+    line-height: 43px;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+    text-align: center; }
+.panel .gallery .group.span-3-4 .span-1-5 .videoOtherLeft {
+  top: -100%; }
+.panel .gallery .group.span-3-4 .span-1-5 .videoOtherRight {
+  top: 100%; }
+.panel .gallery .group.span-3-4 .span-1-5 .videoOtherLeft, .panel .gallery .group.span-3-4 .span-1-5 .videoOtherRight {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  z-index: 2;
+  overflow: hidden;
+  transition: .4s; }
+  .panel .gallery .group.span-3-4 .span-1-5 .videoOtherLeft > img, .panel .gallery .group.span-3-4 .span-1-5 .videoOtherRight > img {
+    width: 100%; }
+  .panel .gallery .group.span-3-4 .span-1-5 .videoOtherLeft .tip, .panel .gallery .group.span-3-4 .span-1-5 .videoOtherRight .tip {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 43px;
+    font-size: 16px;
+    line-height: 43px;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+    text-align: center; }
+.panel .gallery .group.span-3-4 .span-1-5 .picOtherLeft {
+  top: -100%; }
+.panel .gallery .group.span-3-4 .span-1-5 .picOtherRight {
+  top: 100%; }
+.panel .gallery .group.span-3-4 .span-1-5 .picOtherLeft, .panel .gallery .group.span-3-4 .span-1-5 .picOtherRight {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  z-index: 2;
+  overflow: hidden;
+  transition: .4s; }
+  .panel .gallery .group.span-3-4 .span-1-5 .picOtherLeft > img, .panel .gallery .group.span-3-4 .span-1-5 .picOtherRight > img {
+    width: 100%; }
+  .panel .gallery .group.span-3-4 .span-1-5 .picOtherLeft .tip, .panel .gallery .group.span-3-4 .span-1-5 .picOtherRight .tip {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 43px;
+    font-size: 16px;
+    line-height: 43px;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+    text-align: center; }
+.panel .gallery .group.span-3-4 .span-1-5 > img {
+  height: 100%; }
+.panel .gallery .group.span-3-4 .span-1-5 .icoWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 82px;
+  height: 52px; }
+  .panel .gallery .group.span-3-4 .span-1-5 .icoWrapper .ico {
+    margin: 0 auto;
+    height: 100%; }
+  .panel .gallery .group.span-3-4 .span-1-5 .icoWrapper .viewMore {
+    width: 82px;
+    height: 30px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 29px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 17px;
+    display: none; }
+.panel .gallery .group.span-3-4 .image h2.major {
+  font-family: "宋体";
+  font-size: 70px; }
+.panel .gallery .group.span-3-4 .image a.circle {
+  background: url("../../pic/silkRoad/29.png") no-repeat center, #fff;
+  position: absolute;
+  right: 107px;
+  top: 148px; }
+
+.spotlight.large {
+  width: 1020px;
+  background: #028090; }
+  .spotlight.large .itemsWrap {
+    width: 1007px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 40px; }
+    .spotlight.large .itemsWrap li {
+      list-style: none; }
+    .spotlight.large .itemsWrap a {
+      border: 0; }
+    .spotlight.large .itemsWrap .item {
+      float: left;
+      margin-top: 213px; }
+      .spotlight.large .itemsWrap .item:nth-child(1) {
+        width: 139px; }
+      .spotlight.large .itemsWrap .item:nth-child(2) {
+        width: 241px; }
+      .spotlight.large .itemsWrap .item:nth-child(3) {
+        width: 368px; }
+      .spotlight.large .itemsWrap .item:nth-child(4) {
+        float: right;
+        width: 140px; }
+        .spotlight.large .itemsWrap .item:nth-child(4) .QRcode {
+          display: block;
+          width: 100%; }
+      .spotlight.large .itemsWrap .item h5 {
+        font-size: 24px;
+        line-height: 24px;
+        color: #fff;
+        font-weight: 400; }
+      .spotlight.large .itemsWrap .item ul {
+        padding-left: 0; }
+        .spotlight.large .itemsWrap .item ul li {
+          height: 16px;
+          margin-bottom: 16px;
+          padding-left: 0; }
+          .spotlight.large .itemsWrap .item ul li a {
+            color: #fff; }
+
+/*# sourceMappingURL=silkRoad.css.map */

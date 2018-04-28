@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select, td {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 12px "microsoft yahei";
+  word-wrap: break-word;
+}
+
+a, u, s, del {
+  color: #000;
+  text-decoration: none
+}
+
+fieldset, a img, .bor0 {
+  border: 0;
+}
+
+i, em, b {
+  font-style: normal;
+  font-weight: 400;
+}
+
+li {
+  list-style: none
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/*细线边框*/
+
+.ind2 {
+  text-indent: 2em
+}
+
+/*溢出隐藏出现省略号*/
+.over {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*让图片垂直对齐方式*/
+/*给valign添加个子元素对齐图片. 当父元素没有设置宽度时,这个行内块元素会有6px的宽度, 如果父元素设置了宽度 这个块元素没有宽度*/
+.valign:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.valign img {
+  vertical-align: middle;
+}
+
+/*万能清除浮动法*/
+.clear {
+  zoom: 1;
+}
+
+.clear:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*a标签清除蓝色*/
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,body{
+  height:100%;
+}
+
+.remark-content{
+  height:100%;
+  margin: 0 0 0 28px;
+  .commentNone{
+    display: none;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 47px;
+    letter-spacing: 1px;
+    color: #424141;
+    text-align: center;
+    padding-top: 91px;
+
+  }
+  .remarkCount{
+    height:30px;
+    font-size: 16px;
+    padding-left: 14px;
+    padding-top: 30px;
+    color: #333;
+
+  }
+  .remark-item{
+    font-size: 0;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 35px 0 15px 14px;
+    &:last-child{
+      border-bottom: 0;
+    }
+    .remark-people{
+      display: inline-block;
+      height: 72px;
+      width: 72px;
+      overflow: hidden;
+      border-radius: 50%;
+      img{
+        height: 100%;
+      }
+    }
+    .remark-contentr{
+      width: 804px;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 16px;
+      .remark-name{
+        font-weight: bolder;
+        font-size: 16px;
+        display: inline-block;
+        margin-right: 19px;
+        color: #333;
+
+      }
+      .remark-address{
+        font-size: 16px;
+        display: inline-block;
+        margin-right: 36px;
+        span{
+          margin-right: 5px;
+        }
+        b{
+          color: #04be83;
+          
+        }
+      }
+      .remark-itemstar-title{
+        font-size: 16px;
+        display: inline-block;
+      }
+
+      .remark-itemstar{
+        vertical-align: text-bottom;
+        display: inline-block;
+        height: 10px;
+        width: 64px;
+      }
+      .remark-time {
+        font-size: 16px;
+        display: inline-block;
+        float: right;
+        margin-top: 2px;
+        color: #797979;
+      }
+      .remark-desc {
+        margin-top: 10px;
+        font-size: 14px;
+        text-align: justify;
+        color: #444444;
+        line-height: 24px;
+      }
+      .remark-imgwrapper{
+        margin-top: 12px;
+        display:-webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+        .remark-img{
+          flex: 0 0 112px;
+          height: 86px;
+          margin-right: 24px;
+          margin-bottom: 22px;
+          overflow: hidden;
+          img{
+            height: 100%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
